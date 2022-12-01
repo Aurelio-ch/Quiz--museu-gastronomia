@@ -17,6 +17,7 @@ const GameOver = () => {
         perguntas.
       </p>
       <img src="" alt="Fim do Quiz" />
+      {quizState.score === 3 ? (<button className="button-congratulation" onClick={() => dispatch({ type: "CONGRATULATION" })}>Receba seu premio</button>) : ""}
       <button onClick={() => dispatch({ type: "NEW_GAME" })}>Reiniciar</button>
     </div>
   );

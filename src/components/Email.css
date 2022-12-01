@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-control{
+    text-align: center;
+    color: black;
+    width: 26rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    border-style: none;
+
+}
+
+.form-control:focus{
+    outline-style: none;
+}
+
+.form-button {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border-style: none;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 141, 42) 0%,
+        rgb(23, 204, 77) 100%
+    );
+}
+
+.form-button:hover {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border-style: none;
+    background: linear-gradient(
+        90deg,
+        rgb(23, 204, 77)0%,
+        rgb(0, 141, 42) 100%
+    );
+}
+
+

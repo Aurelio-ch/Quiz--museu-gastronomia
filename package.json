@@ -1,6 +1,7 @@
 {
   "name": "quiz",
   "private": true,
+  "homepage": "https://museu.vubis.com.br/quiz-museu/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

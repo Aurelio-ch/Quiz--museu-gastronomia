@@ -1,7 +1,7 @@
 import { createContext, useReducer } from "react";
 import questions from '../data/questions'
 
-const STAGES = ["Start", "Playing", "End"]
+const STAGES = ["Start", "Playing", "End", "Premiado"]
 
 const initialState = {
     gameStage: STAGES[0],
@@ -69,6 +69,14 @@ const quizReducer = (state, action) => {
               answerSelected: option,
             };
           }
+
+
+        case "CONGRATULATION":{
+            return {
+                ...state,
+                gameStage: STAGES[3],
+            };
+        }
         default:
             return state
     }

@@ -6,6 +6,7 @@ import Question from './components/Question';
 import GameOver from './components/GameOver';
 
 import './App.css'
+import Email from './components/Email';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       {quizState.gameStage === "Start" && <Welcome />}
       {quizState.gameStage === "Playing" && <Question />}
       {quizState.gameStage === "End" && <GameOver />}
+      {quizState.gameStage === "Premiado" && <Email />}
     </div>
   )
 }
